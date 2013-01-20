@@ -1,0 +1,25 @@
+<h1>{{hello}}</h1>
+
+<h2>Таблица умножения</h2>
+<div class="row-fluid" ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+    <div class="span1" ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+        <p>{{i*j}}</p>
+    </div>
+</div>
+
+
+<h2>Таблица сложения</h2>
+<div class="row-fluid" ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+    <div class="span1" ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+        <p>{{$eval('i+j')}}</p>
+    </div>
+</div>
+
+<h2>Треугольник Паскаля</h2>
+<div class="row-fluid" ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+    <div class="span1" ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+        <p>{{test(i,j)}}</p>
+    </div>
+</div>
+
+<h1>:D</h1>
