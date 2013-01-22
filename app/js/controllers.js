@@ -11,6 +11,6 @@ function FirstCtrl($scope) {
         if (i > 0 && j > 0) {
             return $scope.test(i, j - 1) + $scope.test(i - 1, j);
         }
-        return i + j;
+        return 1;
     }
 }
